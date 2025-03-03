@@ -12,6 +12,9 @@ module.exports.renderNewForm = async(req,res)=>{
     res.render('campgrounds/new');
 }
 
+///
+///
+
 module.exports.createNewCampground = async(req,res)=>{
 
     const newcampground = await new Campground(req.body.campground);
